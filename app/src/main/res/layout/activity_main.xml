@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Droid Cafe"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/droid_desserts"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <ImageView
+        android:id="@+id/donutImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/donut"
+        android:src="@drawable/donut_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/donut_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/donuts_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/donutImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/iceScreamSandwichImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ice_scream_sandwich"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:contentDescription= "@string/icescreamsandwich"
+        app:layout_constraintVertical_bias="0.45"/>
+
+    <TextView
+        android:id="@+id/iceScreamSandwich_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ice_scream_sandwichs_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toEndOf="@id/donutImg"
+        app:layout_constraintTop_toBottomOf="@id/donut_content" />
+
+    <ImageView
+        android:id="@+id/frozenYogurtImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:contentDescription="@string/frozenyogurt"
+        android:src="@drawable/frozen_yogurt_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/frozenYogurt_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/froyo_content"
+        android:textSize="16sp"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iceScreamSandwichImg"
+        app:layout_constraintTop_toBottomOf="@id/iceScreamSandwich_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shopping_cart"
+        app:shapeAppearanceOverlay="@style/fab_rounded"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

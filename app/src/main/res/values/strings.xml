@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Menus-and-pickers Exercise 1</string>
+    <string name="donut">donut</string>
+    <string name="icescreamsandwich">icescreamsandwich</string>
+    <string name="frozenyogurt">frozenyogurt</string>
+    <string name="droid_desserts">Droid Desserts</string>
+    <string name="donuts_content">Donuts are glazed and sprinkled with candy</string>
+    <string name="ice_scream_sandwichs_content">Ice scream sandwichs have chocolate wafers and vanila filling</string>
+    <string name="froyo_content">Froyo is premium self-serve frozen yogurt</string>
+    <string name="button">button</string>
+    <string name="title_detail">You order a ...</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="note">Note:</string>
+    <string name="choose_the_delivery_method">Choose the delivery method:</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="back">Back</string>
+</resources>
